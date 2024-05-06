@@ -13,13 +13,8 @@ public class Calculate {
      * @param matrix_B друга матриця
      * @param matrix_C матриця для зберігання результату множення
      * @return матриця `matrix_C` з результатом множення `matrix_A` та `matrix_B`
-     * @throws IllegalArgumentException якщо розміри матриць не сумісні для множення
      */
     public static int[][] multiplicateMatrixs(int[][] matrix_A, int[][] matrix_B, int[][] matrix_AxB) {
-        
-        if ( matrix_A[0].length != matrix_B.length) {
-            throw new IllegalArgumentException("The dimensions of the matrices are not compatible for multiplication");
-        }
         
         for (int i = 0; i < matrix_A.length; i++) {
             for (int j = 0; j < matrix_B[0].length; j++) {
